@@ -9,15 +9,24 @@
 <body>
     <header>
         <h1>You Create a Creative CSS Animation</h1>
-        <p>We Ship You an Art Kit!</p>
+        <p class="tagline">We Ship You an Art Kit!</p>
     </header>
 
-    <section id="about">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#participate">How to Participate</a></li>
+            <li><a href="#judging">Judging Criteria</a></li>
+            <li><a href="#examples">Examples</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="card">
         <h2>About the Challenge</h2>
         <p>Show off your creativity by making a unique CSS animation! Use only CSS to create something amazing and get a chance to win an art kit.</p>
     </section>
 
-    <section id="participate">
+    <section id="participate" class="card">
         <h2>How to Participate</h2>
         <ol>
             <li>Design a creative CSS animation.</li>
@@ -26,7 +35,7 @@
         </ol>
     </section>
 
-    <section id="judging">
+    <section id="judging" class="card">
         <h2>Judging Criteria</h2>
         <ul>
             <li>Creativity</li>
@@ -35,6 +44,27 @@
             <li>Performance</li>
             <li>User Interaction</li>
         </ul>
+    </section>
+
+    <section id="examples" class="card">
+        <h2>CSS Animation Examples</h2>
+        <div class="examples-container">
+            <div class="example-card">
+                <h3>Bouncing Ball</h3>
+                <div class="animation-example bouncing-ball"></div>
+                <p>A simple bouncing ball animation using keyframes.</p>
+            </div>
+            <div class="example-card">
+                <h3>Fading Text</h3>
+                <div class="animation-example fading-text"></div>
+                <p>Text that fades in and out smoothly.</p>
+            </div>
+            <div class="example-card">
+                <h3>Spinning Loader</h3>
+                <div class="animation-example spinning-loader"></div>
+                <p>A loader that spins indefinitely.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
