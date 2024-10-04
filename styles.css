@@ -97,26 +97,26 @@ h2 {
     height: 50px;
 }
 
-.bouncing-ball {
-    background-color: #ffeaa7;
-    border-radius: 50%;
-    animation: bounce 1s infinite;
+.link-input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff7eb3;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
-.fading-text {
-    width: 100px;
-    height: 20px;
-    background: #ff7eb3;
-    animation: fadeInOut 2s infinite;
+.link-input:focus {
+    border-color: #ffeaa7;
 }
 
-.spinning-loader {
-    border: 5px solid #ff7eb3;
-    border-top: 5px solid #ffeaa7;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px;
 }
 
 @keyframes fadeIn {
@@ -153,12 +153,4 @@ h2 {
     100% {
         transform: rotate(360deg);
     }
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin: 20px;
 }
