@@ -1,0 +1,49 @@
+@media (max-width: 600px) {
+  header {
+    margin-top: 85px;
+    height: auto;
+  }
+
+  nav {
+    position: fixed;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    animation-delay: 0s;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ff7eb3;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .nav-toggle.rotate {
+    transform: rotate(180deg);
+  }
+
+  nav ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  nav.open ul {
+    max-height: 300px; /* Adjust this value based on your content */
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    display: inline-block;
+    width: 100%;
+  }
+}
