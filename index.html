@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>You Create CSS Animations</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>You Create CSS Animations</h1>
-        <p class="tagline">We Ship You Art Supplies!</p>
-    </header>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
     <nav>
+      <div id="center">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#participate">How to Participate</a></li>
-            <li><a href="#judging">Judging Criteria</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#participate">How to Participate</a></li>
+          <li><a href="#judging">Judging Criteria</a></li>
         </ul>
+      </div>
     </nav>
 
+    <header>
+      <h1>You Ship CSS Animations</h1>
+      <p class="tagline">We Ship Art Supplies or Procreate!</p>
+      <h2>A (currently unofficial) YSWS program</h2>
+    </header>
+
     <section id="about" class="card">
-        <h2>About the YSWS</h2>
-        <p>Make a CSS animation! Use only CSS to create a cool animation and get some art supplies.</p>
+      <h2>About the YSWS</h2>
+      <p>
+        Make a CSS animation! Use only CSS to create a cool animation and get
+        some art supplies.
+      </p>
     </section>
 
     <section id="participate" class="card">
-        <h2>How to Participate</h2>
-        <ol>
-            <li>Design a creative CSS animation.</li>
-            <li>Deploy to CodePen.</li>
-            <li>Get some art supplies!</li>
-        </ol>
+      <h2>How to Participate</h2>
+      <ol>
+        <li>
+          Design a creative CSS animation (check
+          <a href="#rules">criteria</a> for what counts as creative)
+        </li>
+        <li>
+          Upload your CSS animation to GitHub, then deploy it to your platform
+          of choice (GitHub Pages is recommended)
+        </li>
+        <li>
+          Submit your GitHub repo and live site link to the submissions form
+          <a href="#submit">here</a> by the deadline
+        </li>
+        <li>
+          If you're approved, we'll be in touch to arrange the shipping of your
+          choice between art supplies and Procreate
+        </li>
+      </ol>
     </section>
 
     <section id="judging" class="card">
-        <h2>Examples</h2>
-        <ul>
-            <li>Coming</li>
-            <li>Soon</li>
-            <li>To</li>
-            <li>This</li>
-            <li>YSWS</li>
-        </ul>
+      <h2>Judging Criteria</h2>
+      <ul>
+        <li>Judging criteria is coming soon!</li>
+      </ul>
+    </section>
+
+    <section id="examples" class="card">
+      <h2>Examples</h2>
+      <ul>
+        <li><a href="/examples/example1">Example 1</a> by Person</li>
+        <li>More examples coming soon!</li>
+      </ul>
     </section>
 
     <footer>
-        <p>&copy; UnOfficial YSWS | CSS Animations -> Art Supplies.</p>
+      <p>&copy; UnOfficial YSWS | CSS Animations -> Art Supplies.</p>
     </footer>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
