@@ -67,4 +67,17 @@ a:hover {
     color: #ff6eb9;
     text-decoration: underline;
 }
-body 
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(
+      135deg,
+      #ffadc0,
+      #ffaeac,
+      #67d9ff,
+      #6dfccc
+    ); /* Gradient with pink, turquoise, and blue */
+    background-size: 300% 300%;
+    animation: gradient 8s ease infinite;
+    color: #fff;
+}
