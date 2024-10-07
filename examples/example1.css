@@ -1,0 +1,83 @@
+@keyframes box{
+    0% {
+        rotate: 90deg;
+        border-top-left-radius: 100px;
+    }
+    25% {
+        rotate: 180deg;
+        border-bottom-left-radius: 100px;
+    }
+    50% {
+        rotate: 270deg;
+        border-bottom-right-radius: 100px;
+    }
+    100% {
+        rotate: 360deg;
+        border-top-right-radius: 100px;
+    }
+    /* 0% {
+        position: fixed;
+        background-color: dodgerblue;
+        color: aquamarine;
+    } */
+    /* 25% {
+        position: fixed;
+        background-color: dodgerblue;
+        color: aquamarine;
+        left: 50px;
+        width: 400px;
+        height: 200px;
+    }
+    50% {
+        position: fixed;
+        background-color: dodgerblue;
+        color: aquamarine;
+        left: 100px;
+        width: 400px;
+        height: 200px;
+    } */
+    /* 100% {
+        position: fixed;
+        background-color: dodgerblue;
+        color: aquamarine;
+        left: 200px;
+        transform: scaleX(0);
+    } */
+}
+.box {
+    background-color: dodgerblue;
+    color: aquamarine;
+    width: 200px;
+    height: 200px;
+    animation-name: box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+
+a {
+    color: #ff7eb3;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #ff6eb9;
+    text-decoration: underline;
+}
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(
+      135deg,
+      #ffadc0,
+      #ffaeac,
+      #67d9ff,
+      #6dfccc
+    ); /* Gradient with pink, turquoise, and blue */
+    background-size: 300% 300%;
+    animation: gradient 8s ease infinite;
+    color: #fff;
+}

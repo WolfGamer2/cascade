@@ -1,0 +1,611 @@
+a {
+    color: #ff7eb3;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #ff6eb9;
+    text-decoration: underline;
+}
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(
+      135deg,
+      #ffadc0,
+      #ffaeac,
+      #67d9ff,
+      #6dfccc
+    ); /* Gradient with pink, turquoise, and blue */
+    background-size: 300% 300%;
+    animation: gradient 8s ease infinite;
+    color: #fff;
+}
+
+.circle1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle5 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle6 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle7 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle7;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle8 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle8;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle9 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle9;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle10 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle10;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle11 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle11;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.circle12 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    animation-name: circle12;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.thing {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* background-color: cadetblue; */
+    border: 100px solid blueviolet;
+    opacity: 50%;
+    border-top: 100px solid blue;
+}
+
+@keyframes circle1 {
+    0% {
+        background-color: aqua;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle2 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: aqua;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle3 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: aqua;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle4 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: aqua;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle5 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: aqua;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle6 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: aqua;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle7 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: aqua;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle8 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: aqua;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle9 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: aqua;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle10 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: aqua;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle11 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: aqua;
+    }
+    100% {
+        background-color: cadetblue;
+    }
+}
+@keyframes circle12 {
+    0% {
+        background-color: cadetblue;
+    }
+    8% {
+        background-color: cadetblue;
+    }
+    16% {
+        background-color: cadetblue;
+    }
+    24% {
+        background-color: cadetblue;
+    }
+    32% {
+        background-color: cadetblue;
+    }
+    40% {
+        background-color: cadetblue;
+    }
+    48% {
+        background-color: cadetblue;
+    }
+    56% {
+        background-color: cadetblue;
+    }
+    64% {
+        background-color: cadetblue;
+    }
+    72% {
+        background-color: cadetblue;
+    }
+    80% {
+        background-color: cadetblue;
+    }
+    100% {
+        background-color: aqua;
+    }
+}

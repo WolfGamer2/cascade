@@ -1,0 +1,44 @@
+a {
+    color: #ff7eb3;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #ff6eb9;
+    text-decoration: underline;
+}
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(
+      135deg,
+      #ffadc0,
+      #ffaeac,
+      #67d9ff,
+      #6dfccc
+    ); /* Gradient with pink, turquoise, and blue */
+    background-size: 300% 300%;
+    animation: gradient 8s ease infinite;
+    color: #fff;
+}
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* background-color: cadetblue; */
+    border: 100px solid blueviolet;
+    border-top: 100px solid plum;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
