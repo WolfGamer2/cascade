@@ -1,18 +1,33 @@
-window.addEventListener("load", function () {
-  const loadingScreen = document.getElementById("loading-screen");
-  
-  // Fade out the loading screen
-  loadingScreen.style.transition = "opacity 0.5s ease";
-  loadingScreen.style.opacity = "0";
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector("nav");
+  const navToggle = document.createElement("button");
+  const header = document.querySelector("header");
+  navToggle.classList.add("nav-toggle");
+  navToggle.innerHTML = "☰";
+  nav.insertBefore(navToggle, nav.firstChild);
 
-  // Hide the loading screen after fade-out
-  setTimeout(() => {
-    loadingScreen.style.display = "none";
-  }, 500);
-});
+  navToggle.addEventListener("click", function () {
+    nav.classList.toggle("open");
+    navToggle.innerHTML = nav.classList.contains("open") ? "✕" : "☰";
+    if (nav.classList.contains("open")) {
+      navToggle.classList.add("rotate");
+      header.style.marginTop = "285px";
+    } else {
+      navToggle.classList.remove("rotate");
+      header.style.marginTop = "85px";
+    }
+  });
 
-// Make logo clickable to redirect
-const logo = document.querySelector('.logo');
-logo.addEventListener('click', function () {
-  window.location.href = "https://hackclub.com";
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      this.classList.add("active");
+      if (window.innerWidth <= 600) {
+        nav.classList.remove("open");
+        navToggle.innerHTML = "☰";
+        header.style.marginTop = "85px";
+      }
+    });
+  });
 });
