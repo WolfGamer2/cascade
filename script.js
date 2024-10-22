@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   // Create a gradient background
-  const gradientTexture = new THREE.TextureLoader().load('path/to/your/gradient-image.jpg'); // Replace with your gradient
+  const gradientTexture = new THREE.TextureLoader().load('https://cloud-nu6wd3052-hack-club-bot.vercel.app/0image.png'); // Replace with your gradient
   const backgroundMesh = new THREE.Mesh(
       new THREE.PlaneGeometry(200, 200),
       new THREE.MeshBasicMaterial({ map: gradientTexture })
@@ -63,12 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const marker = document.getElementById('marker');
 
-document.addEventListener('mousemove', (event) => {
-    marker.style.left = `${event.clientX}px`;
-    marker.style.top = `${event.clientY}px`;
-    marker.style.display = isDrawing ? 'block' : 'none';
-});
-
+  document.addEventListener('mousemove', (event) => {
+      marker.style.left = `${event.clientX}px`;
+      marker.style.top = `${event.clientY}px`;
+      marker.style.display = isDrawing ? 'block' : 'none';
+  });
 
   document.addEventListener('mousedown', () => {
       isDrawing = true;
@@ -78,7 +77,7 @@ document.addEventListener('mousemove', (event) => {
 
   document.addEventListener('mouseup', () => {
       isDrawing = false;
-      points.length = 0; // Clear points when mouse up
+      // points.length = 0; // Clear points when mouse up (comment out if you want to keep them)
   });
 
   document.addEventListener('mousemove', onMouseMove);
