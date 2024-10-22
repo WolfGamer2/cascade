@@ -1,15 +1,18 @@
-// Handle loading screen
-window.onload = function() {
-  const loadingScreen = document.getElementById('loading-screen');
-  loadingScreen.style.opacity = '0';
-  loadingScreen.style.transition = 'opacity 0.5s ease-out';
+window.addEventListener("load", function () {
+  const loadingScreen = document.getElementById("loading-screen");
+  
+  // Fade out the loading screen
+  loadingScreen.style.transition = "opacity 0.5s ease";
+  loadingScreen.style.opacity = "0";
 
+  // Hide the loading screen after fade-out
   setTimeout(() => {
-    loadingScreen.style.display = 'none';
-  }, 500); // Time matches the CSS transition duration
-};
+    loadingScreen.style.display = "none";
+  }, 500);
+});
 
-// Hack Club logo click to redirect
-document.querySelector('.logo').onclick = function() {
-  window.location.href = 'https://hackclub.com';
-};
+// Make logo clickable to redirect
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', function () {
+  window.location.href = "https://hackclub.com";
+});
