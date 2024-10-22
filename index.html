@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cascade - You Create CSS Animations</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mobile.css" />
-  </head>
-  <body>
-    <nav>
-      <div id="center">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#participate">How to Participate</a></li>
-          <li><a href="#judging">Judging Criteria</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cascade - You Create CSS Animations</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <!-- Loading Screen with 3D Cube -->
+  <div id="loading-screen">
+    <div class="cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face left"></div>
+      <div class="face right"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+  </div>
 
-    <header>
-      <h1>Cascade - You Ship CSS Animations</h1>
-      <p class="tagline">We Ship Art Supplies or Goodnotes Premium!</p>
-      <h2>Running from Nov 1st to Jan 1st</h2>
-
-      <!-- Submit Button Section -->
-      <div style="text-align: center; margin-top: 20px;">
-        <a href="https://forms.fillout.com/t/dQKmU4dXTjus" target="_blank">
-          <button style="
-            background-color: rgba(255, 126, 179, 0.6); 
-            color: white; 
-            padding: 10px 20px; 
-            border: none; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            transition: background-color 0.3s;
-            backdrop-filter: blur(10px); /* For clear background effect */
-          ">
-            Submit Your Animation
-          </button>
-        </a>
-      </div>
-    </header>
-
-    <section id="about" class="card">
-      <h2>About the YSWS</h2>
-      <p>
-        Make a CSS animation! Use only CSS to create a cool animation and get
-        some art supplies.
-      </p>
-    </section>
-
-    <section id="participate" class="card">
-      <h2>How to Participate</h2>
-      <ol>
-        <li>
-          Design a creative CSS animation (check
-          <a href="#rules">criteria</a> for what counts as creative)
-        </li>
-        <li>
-          Make your CSS animation in CodePen!
-        </li>
-        <li>
-          Submit your CodePen and code to the submission form
-          <a href="https://forms.fillout.com/t/dQKmU4dXTjus" target="_blank">here</a> by the deadline
-        </li>
-        <li>
-          If you're approved, we'll be in touch to arrange the shipping of your
-          the choice between art supplies and art software.
-        </li>
-      </ol>
-    </section>
-
-    <section id="judging" class="card">
-      <h2>Judging Criteria</h2>
+  <nav>
+    <!-- Hack Club logo -->
+    <img class="logo" src="https://cloud-f5qo4uc0o-hack-club-bot.vercel.app/0image.png" alt="Hack Club Logo" />
+    <div id="center">
       <ul>
-        <li>Creativity: How creative the animation is</li>
-        <li>Visual Appeal: The animation should look good.</li>
-        <li>Elements: Must use 2+ elements like text, shapes and colors</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#participate">How to Participate</a></li>
+        <li><a href="#judging">Judging Criteria</a></li>
       </ul>
-    </section>
+    </div>
+  </nav>
 
-    <section id="examples" class="card">
-      <h2>Examples</h2>
-      <ul>
-        <li><a href="./examples/example1.html">Example 1</a> by Lilia</li>
-        <li><a href="./examples/example2.html">Example 2</a> by Lilia</li>
-        <li><a href="./examples/example3.html">Example 3</a> by Lilia</li>
-        <li>More examples coming soon!</li>
-      </ul>
-    </section>
+  <header>
+    <h1 class="animated-text">Cascade - You Ship CSS Animations</h1>
+    <p class="tagline animated-text">We Ship Art Supplies or Goodnotes Premium!</p>
+    <h2 class="animated-text">Running from Nov 1st to Jan 1st</h2>
 
-    <footer>
-      <p>&copy; Official YSWS | Cascade -> Art Supplies.</p>
-    </footer>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://forms.fillout.com/t/dQKmU4dXTjus" target="_blank">
+        <button class="pop-button">Submit Your Animation</button>
+      </a>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
-  </body>
+  <section id="about" class="card float-in">
+    <h2>About the YSWS</h2>
+    <p>Make a CSS animation! Use only CSS to create a cool animation and get some art supplies.</p>
+  </section>
+
+  <section id="participate" class="card float-in">
+    <h2>How to Participate</h2>
+    <ol>
+      <li>Design a creative CSS animation (check <a href="#rules">criteria</a> for what counts as creative)</li>
+      <li>Make your CSS animation in CodePen!</li>
+      <li>Submit your CodePen and code to the submission form <a href="https://forms.fillout.com/t/dQKmU4dXTjus" target="_blank">here</a> by the deadline</li>
+      <li>If you're approved, we'll be in touch to arrange the shipping of your choice between art supplies and art software.</li>
+    </ol>
+  </section>
+
+  <section id="judging" class="card float-in">
+    <h2>Judging Criteria</h2>
+    <ul>
+      <li>Creativity: How creative the animation is</li>
+      <li>Visual Appeal: The animation should look good.</li>
+      <li>Elements: Must use 2+ elements like text, shapes, and colors</li>
+    </ul>
+  </section>
+
+  <section id="examples" class="card float-in">
+    <h2>Examples</h2>
+    <ul>
+      <li><a href="./examples/example1.html">Example 1</a> by Lilia</li>
+      <li><a href="./examples/example2.html">Example 2</a> by Lilia</li>
+      <li><a href="./examples/example3.html">Example 3</a> by Lilia</li>
+      <li>More examples coming soon!</li>
+    </ul>
+  </section>
+
+  <footer class="glow-footer">
+    <p>&copy; Official YSWS | Cascade -> Art Supplies.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
