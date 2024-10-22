@@ -61,6 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
       scene.add(line);
   }
 
+  const marker = document.getElementById('marker');
+
+document.addEventListener('mousemove', (event) => {
+    marker.style.left = `${event.clientX}px`;
+    marker.style.top = `${event.clientY}px`;
+    marker.style.display = isDrawing ? 'block' : 'none';
+});
+
+
   document.addEventListener('mousedown', () => {
       isDrawing = true;
       points.length = 0; // Clear previous points
