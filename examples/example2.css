@@ -1,44 +1,85 @@
-a {
-    color: #ff7eb3;
-    text-decoration: none;
-}
-  
-a:hover {
-    color: #ff6eb9;
-    text-decoration: underline;
-}
 body {
-    font-family: "Arial", sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(
-      135deg,
-      #ffadc0,
-      #ffaeac,
-      #67d9ff,
-      #6dfccc
-    ); /* Gradient with pink, turquoise, and blue */
-    background-size: 300% 300%;
-    animation: gradient 8s ease infinite;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    background: linear-gradient(to top, #001f3f, #7fdbff);
+    overflow: hidden;
+    position: relative;
 }
-@keyframes rotate {
+
+.moon {
+    position: absolute;
+    top: 50px; 
+    left: 70%; 
+    width: 100px;
+    height: 100px;
+    background-color: #f3c200;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+.rocket {
+    position: relative;
+    animation: flyToMoon 5s infinite;
+}
+
+.body {
+    width: 50px;
+    height: 100px;
+    background-color: #ff4136;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.fin {
+    width: 20px;
+    height: 30px;
+    background-color: #ff851b;
+    position: absolute;
+    bottom: 0;
+}
+
+.fin-left {
+    left: -10px;
+    transform: rotate(30deg);
+}
+
+.fin-right {
+    right: -10px;
+    transform: rotate(-30deg);
+}
+
+.flame {
+    width: 10px;
+    height: 20px;
+    background: linear-gradient(to top, #ffdc00, #ff851b);
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    border-radius: 5px;
+    animation: flameAnimation 0.5s infinite alternate;
+}
+
+@keyframes flameAnimation {
     0% {
-        rotate: 0deg;
+        height: 20px;
+        opacity: 1;
     }
     100% {
-        rotate: 360deg;
+        height: 30px;
+        opacity: 0.5;
     }
 }
 
-.circle {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    /* background-color: cadetblue; */
-    border: 100px solid blueviolet;
-    border-top: 100px solid plum;
-    animation-name: rotate;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+@keyframes flyToMoon {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    50% {
+        transform: translateY(-300px) translateX(150px) scale(1.2);
+    }
+    100% {
+        transform: translateY(-600px) translateX(300px) scale(0);
+    }
 }
