@@ -271,7 +271,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  top: 100px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
