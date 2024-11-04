@@ -267,32 +267,47 @@ footer {
 }
 
 #announcement-popup {
-  display: none; 
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 126, 179, 0.9);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.2rem;
+  background-color: #f1f1f1; 
+  color: #333; 
+  padding: 15px 30px;
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
   z-index: 1000;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px); 
-  margin: 10px auto; 
   max-width: 90%; 
+  margin: 20px auto;
 }
 
-#announcement-popup p {
+#icon {
+  font-size: 1.8rem; 
+  margin-right: 15px; 
+}
+
+#announcement-text {
+  flex-grow: 1; 
+}
+
+#announcement-text strong {
+  font-size: 1.2rem;
+}
+
+#announcement-text p {
   margin: 0;
+  font-size: 1rem;
 }
 
 #close-popup {
-  position: absolute;
-  right: 20px;
-  top: 15px;
   font-size: 1.5rem;
   cursor: pointer;
-  color: white;
+  color: #333;
+}
+
+#close-popup:hover {
+  color: #ff7eb3; 
 }
