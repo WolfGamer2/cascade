@@ -15,7 +15,7 @@ body {
     #ffaeac,
     #67d9ff,
     #6dfccc
-  ); /* Gradient with pink, turquoise, and blue */
+  );
   background-size: 300% 300%;
   animation: gradient 8s ease infinite;
   color: #fff;
@@ -264,4 +264,35 @@ footer {
 
 .nav-toggle {
   display: none;
+}
+
+#announcement-popup {
+  display: none; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 126, 179, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  z-index: 1000;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); 
+  margin: 10px auto; 
+  max-width: 90%; 
+}
+
+#announcement-popup p {
+  margin: 0;
+}
+
+#close-popup {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
 }
