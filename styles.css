@@ -270,18 +270,19 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  top: 0;
-  width: 100%;
-  background-color: #f1f1f1; 
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: white;
   color: #333; 
   padding: 15px 30px;
   border-radius: 12px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   z-index: 1000;
-  max-width: 90%; 
-  margin: 20px auto;
+  margin: 0;
 }
 
 #icon {
@@ -307,6 +308,11 @@ footer {
   cursor: pointer;
   color: #333;
 }
+
+#close-popup:hover {
+  color: #ff7eb3; 
+}
+
 
 #close-popup:hover {
   color: #ff7eb3; 
