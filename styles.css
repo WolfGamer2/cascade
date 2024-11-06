@@ -475,21 +475,13 @@ footer {
 
 .hover-link:hover {
   color: white;
-  font-weight: bold;
 }
 
 @import url("https://rsms.me/inter/inter.css");
-html {
-  font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
 
 .floating {
   display: flex;
+  font-size: 15vh;
   justify-content: center;
   align-items: center;
   animation: floating 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
@@ -503,12 +495,19 @@ html {
   overflow: hidden;
 }
 
+.icon:hover {
+  animation: spin 2s linear infinite;
+}
+
 .floating {
+  margin-bottom: 1em;
   overflow: hidden;
 }
 
 .floating span {
-  transition: font-weight 0.4s ease-in;
+  font-weight: 900;
+  font-family: "InterVariable", "Inter", sans-serif;
+  transition: font-weight .4s ease-in;
   animation: floating-secondary 2.5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 }
 
