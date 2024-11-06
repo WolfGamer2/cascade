@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cascade - You Create CSS Animations</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mobile.css" />
   </head>
@@ -24,21 +27,22 @@
 <script defer src="/_vercel/insights/script.js"></script>
 
     <header>
-      <h1>Cascade - You Ship CSS Animations</h1>
-      <p class="tagline">We Ship Art Supplies or Goodnotes Premium!</p>
-      <h2>Running from Nov 1st to Jan 1st</h2>
+      <h1 class="icon">💅</h1>
+      <h1 class="floating"><div class="tilt">
+        <span>C</span>
+        <span>A</span>
+        <span>S</span>
+        <span>C</span>
+        <span>A</span>
+        <span>D</span>
+        <span>E</span>
+      </div></h1>
+      <h2>Build and ship CSS Animations</h2>
+      <p class="tagline marquee">Ends Jan 1st, 2025</p>
       
       <div style="text-align: center; margin-top: 20px;">
         <a href="https://forms.hackclub.com/cascade" target="_blank">
-          <button style="
-            background-color: rgba(255, 126, 179, 0.6); 
-            color: white; 
-            padding: 10px 20px; 
-            border: none; 
-            border-radius: 10px; 
-            cursor: pointer; 
-            transition: background-color 0.3s;
-            backdrop-filter: blur(10px); /* For clear background effect */
+          <button class="submit" style="
           ">
             Submit Your Animation
           </button>
@@ -59,14 +63,14 @@
       <ol>
         <li>
           Design a creative CSS animation (check
-          <a href="#rules">criteria</a> for what counts as creative)
+          <a href="#rules" class="hover-link">criteria</a> for what counts as creative)
         </li>
         <li>
           Make your CSS animation in CodePen!
         </li>
         <li>
           Submit your CodePen and code to the submission form
-          <a href="https://forms.hackclub.com/cascade" target="_blank">here</a> by the deadline
+          <a href="https://forms.hackclub.com/cascade" class="hover-link" target="_blank">here</a> by the deadline
         </li>
         <li>
           If you're approved, we'll be in touch to arrange the shipping of your
@@ -88,16 +92,14 @@
     <section id="examples" class="card">
       <h2>Examples</h2>
       <ul>
-        <li><a href="https://codepen.io/magsnake/pen/OJKxWgO" target="_blank">Example 1</a> by Aryan Yadav</li>
-        <li><a href="https://codepen.io/grandell1234/pen/abeGrPZ" target="_blank">Example 2</a> by Elijah Spitzer</li>
-        <li><a href="https://codepen.io/Mohit-Tiwari-the-vuer/pen/JjgMyLR" target="_blank">Example 3</a> by Mohit Tiwari</li>
-        <li><a href="https://codepen.io/mitang321/pen/OJKwpvV" target="_blank">Example 4</a> by Mitang Hindocha</li>
-        <li>More examples coming soon!</li>
+        <li><a class="hover-link" href="https://codepen.io/mitang321/pen/OJKwpvV" target="_blank">Solar system</a> by Mitang Hindocha</li>
+        <li><a class="hover-link" href="https://codepen.io/grandell1234/pen/abeGrPZ" target="_blank">3D cube</a> by Elijah Spitzer</li>
+        <li><a class="hover-link" href="https://codepen.io/magsnake/pen/OJKxWgO" target="_blank">Simple pendulum</a> by Aryan Yadav</li>
       </ul>
     </section>
 
     <footer>
-      <p>&copy; Official YSWS | Cascade -> Art Supplies.</p>
+      <p>Made with <span class="glitched"></span></p>
     </footer>
 
     <script src="script.js"></script>
