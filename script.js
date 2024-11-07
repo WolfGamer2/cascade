@@ -35,3 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   new cursoreffects.springyEmojiCursor({ emoji: "🤷‍♂️" });
 });
+let currentIndex = 0;
+
+function moveCarousel(direction) {
+  const items = document.querySelectorAll(".carousel-item");
+
+  items[currentIndex].classList.remove("active");
+
+  currentIndex = (currentIndex + direction + items.length) % items.length;
+
+  items[currentIndex].classList.add("active");
+}
