@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector("nav");
   const navToggle = document.createElement("button");
   const header = document.querySelector("header");
+
   navToggle.classList.add("nav-toggle");
   navToggle.innerHTML = "☰";
   nav.insertBefore(navToggle, nav.firstChild);
@@ -20,9 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const navLinks = document.querySelectorAll("nav a");
   navLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
+    link.addEventListener("click", function () {
       navLinks.forEach((l) => l.classList.remove("active"));
       this.classList.add("active");
+
       if (window.innerWidth <= 600) {
         nav.classList.remove("open");
         navToggle.innerHTML = "☰";
@@ -30,11 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  new cursoreffects.springyEmojiCursor({ emoji: "🤷‍♂️" });
 });
-
-<script>
-  window.addEventListener("load", (event) => {
-    new cursoreffects.springyEmojiCursor({ emoji: "🤷‍♂️" });
-  });
-</script>
-
