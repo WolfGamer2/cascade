@@ -31,3 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+<script>
+  window.addEventListener("load", (event) => {
+    new cursoreffects.springyEmojiCursor({ emoji: "🤷‍♂️" });
+  });
+</script>
+
